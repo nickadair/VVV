@@ -1,0 +1,222 @@
+@import "compass/css3";
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body{
+  background: #5f340b;
+}
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+//Headers (h1, h2, etc) have no default font-size or margin; define those yourself
+h1, h2, h3, h4, h5, h6 {
+  // Bold might not be the best choice if you are
+  // embedding a @font-face that's already bold
+  font-weight: bold;
+}    
+
+h1{
+  font-size: 24px;
+}
+
+h2{
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p{
+  margin-bottom: 20px;
+}
+
+a, a:active, a:visited { color: $link-color; }
+a:hover { color: $link-hover-color; }
+
+strong, th {
+  font-weight: bold;
+}          
+
+th{
+  font-size: 1.2em;
+  color: $dark-brown-background;
+}
+
+small {
+  // Use font-size mixin to convert to percentage for YUI
+  // http://developer.yahoo.com/yui/3/cssfonts/#fontsize
+  @include font-size(11px);  // approx 85% when base-font-size eq 13px
+}
+
+// Add the 'required' attribute on your
+// inputs if you want to use these
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+  @include border-radius(1px);
+  @include single-box-shadow(red, 0, 0, 5px, 0);
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+body {
+  
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  padding: $section-padding;
+  background: url('/images/header.gif') no-repeat top center;
+  height: 137px;
+  margin:0;
+  padding:0;
+  #logo{
+    width: 593px;
+    float: left; 
+    text-indent: -999em;
+  }
+  #start_challenge{
+    width: 367px;
+    float:left;
+    text-align:right;
+  }
+}
+
+#main {
+  width: 593px;
+  float: left;   
+  h2{
+    background: $dark-brown-background url('/images/red_star.gif') top center no-repeat;
+    color: #630;
+    padding: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 25px 15px 20px;
+  }
+    
+  .challenge{
+    width: 573px;     
+    padding-left: 10px;
+    margin-left: 20px;
+    height:270px;
+    background: url('/images/vs_star.gif') no-repeat 213px bottom;
+    .challenger{  
+      width: 250px;
+      float:left;
+      margin-left: 10px;
+      th{
+        padding: 5px 0;
+      }
+      td{
+        text-align: center;
+      }
+      td.vote_count{
+        font-size: 3em;
+        padding: 0;
+      }
+    .vote{
+      background: $dark-red;
+      padding: 3px 6px;
+      font-size: 1.5em;
+      border: 1px solid darken($dark-red, 10%);
+    }
+    } 
+  }
+  .comments{
+    width: 550px;
+    margin-top: 40px;
+    margin-left: 20px;
+    h2{
+      padding: 3px 6px;
+      margin: 0 0 3px 0;      
+    }
+    td{
+      padding: 6px;
+      border-bottom: 1px solid #ccc;
+      p.commenter{
+        font-size: 0.8em;
+        margin-bottom: 0.8em;
+      }
+    }
+  }             
+  
+} 
+
+#sidebar{
+  width: 367px;
+  float: left;
+  h3.blue{
+    margin: 0 0 15px 0;
+    background: $dark-blue;
+  }
+  h3.blue:hover{
+    background: lighten($dark-blue, 10%);
+  }
+  
+  h3.green{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: $dark-green;
+  }
+  h3.green:hover{
+    background: lighten($dark-green, 10%);
+  }
+  
+  h3.red{
+    background: $dark-red;
+  }
+  h3.red:hover{
+    background: lighten($dark-red, 10%);
+  }
+  
+  h3{
+    font-size: 2em;
+    text-align: center;
+    background: $dark-brown-background;  
+    text-transform: uppercase;
+    padding: 3px 6px;
+    a{
+      text-decoration: none;
+      color: $brown;
+    }
+  }  
+  embed{
+    margin-left: 3px;  
+    background: #000;
+  }
+}
+
+#about{
+  width:100%;
+  padding: 40px 25px;
+  
+  p{
+    width: 700px;
+    margin-left: 20px;
+  }
+  
+  h2{
+    background: $dark-brown-background;
+    color: #630;
+    padding: 3px 3px 3px 20px;
+    text-transform: uppercase;
+    margin: 0 25px 15px 0
+  }
+}
+
+footer {}

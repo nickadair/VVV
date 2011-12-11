@@ -1,0 +1,573 @@
+/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 23, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 34, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 36, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 40, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 42, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_fonts.scss */
+body {
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.231;
+  *font-size: small;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_fonts.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 15, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+ul, ol {
+  margin-left: 2em;
+}
+
+/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  bottom: -0.25em;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 53, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 58, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+/* line 71, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+/* line 80, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+button, input, select, textarea {
+  width: auto;
+  overflow: visible;
+  margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  vertical-align: baseline;
+}
+
+/* line 84, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+textarea {
+  overflow: auto;
+  vertical-align: text-top;
+}
+
+/* line 88, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 99, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+::-moz-selection {
+  background: #ffffcc;
+  color: #333333;
+  text-shadow: none;
+}
+
+/* line 100, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+::selection {
+  background: #ffffcc;
+  color: #333333;
+  text-shadow: none;
+}
+
+/* line 105, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+a:link {
+  -webkit-tap-highlight-color: #ffffcc;
+}
+
+/* line 118, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 120, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* line 125, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 10, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.ir {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  direction: ltr;
+  background-repeat: no-repeat;
+}
+
+/* line 12, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 50, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 16, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 61, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 62, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 7, ../../app/stylesheets/partials/_page.scss */
+body {
+  background: #5f340b;
+}
+
+/* line 10, ../../app/stylesheets/partials/_page.scss */
+body, select, input, textarea {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 19, ../../app/stylesheets/partials/_page.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 25, ../../app/stylesheets/partials/_page.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 29, ../../app/stylesheets/partials/_page.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* line 34, ../../app/stylesheets/partials/_page.scss */
+p {
+  margin-bottom: 20px;
+}
+
+/* line 38, ../../app/stylesheets/partials/_page.scss */
+a, a:active, a:visited {
+  color: #607890;
+}
+
+/* line 39, ../../app/stylesheets/partials/_page.scss */
+a:hover {
+  color: #003366;
+}
+
+/* line 41, ../../app/stylesheets/partials/_page.scss */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 45, ../../app/stylesheets/partials/_page.scss */
+th {
+  font-size: 1.2em;
+  color: #311900;
+}
+
+/* line 50, ../../app/stylesheets/partials/_page.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 59, ../../app/stylesheets/partials/_page.scss */
+input:invalid, textarea:invalid {
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -khtml-border-radius: 1px;
+  border-radius: 1px;
+  -moz-box-shadow: 0 0 5px 0 red;
+  -webkit-box-shadow: 0 0 5px 0 red;
+  -o-box-shadow: 0 0 5px 0 red;
+  box-shadow: 0 0 5px 0 red;
+}
+
+/* line 64, ../../app/stylesheets/partials/_page.scss */
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 75, ../../app/stylesheets/partials/_page.scss */
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 80, ../../app/stylesheets/partials/_page.scss */
+header {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 10px;
+  background: url("/images/header.gif") no-repeat top center;
+  height: 137px;
+  margin: 0;
+  padding: 0;
+}
+/* line 88, ../../app/stylesheets/partials/_page.scss */
+header #logo {
+  width: 593px;
+  float: left;
+  text-indent: -999em;
+}
+/* line 93, ../../app/stylesheets/partials/_page.scss */
+header #start_challenge {
+  width: 367px;
+  float: left;
+  text-align: right;
+}
+
+/* line 100, ../../app/stylesheets/partials/_page.scss */
+#main {
+  width: 593px;
+  float: left;
+}
+/* line 103, ../../app/stylesheets/partials/_page.scss */
+#main h2 {
+  background: #311900 url("/images/red_star.gif") top center no-repeat;
+  color: #630;
+  padding: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 25px 15px 20px;
+}
+/* line 112, ../../app/stylesheets/partials/_page.scss */
+#main .challenge {
+  width: 573px;
+  padding-left: 10px;
+  margin-left: 20px;
+  height: 270px;
+  background: url("/images/vs_star.gif") no-repeat 213px bottom;
+}
+/* line 118, ../../app/stylesheets/partials/_page.scss */
+#main .challenge .challenger {
+  width: 250px;
+  float: left;
+  margin-left: 10px;
+}
+/* line 122, ../../app/stylesheets/partials/_page.scss */
+#main .challenge .challenger th {
+  padding: 5px 0;
+}
+/* line 125, ../../app/stylesheets/partials/_page.scss */
+#main .challenge .challenger td {
+  text-align: center;
+}
+/* line 128, ../../app/stylesheets/partials/_page.scss */
+#main .challenge .challenger td.vote_count {
+  font-size: 3em;
+  padding: 0;
+}
+/* line 132, ../../app/stylesheets/partials/_page.scss */
+#main .challenge .challenger .vote {
+  background: #660000;
+  padding: 3px 6px;
+  font-size: 1.5em;
+  border: 1px solid #330000;
+}
+/* line 140, ../../app/stylesheets/partials/_page.scss */
+#main .comments {
+  width: 550px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+/* line 144, ../../app/stylesheets/partials/_page.scss */
+#main .comments h2 {
+  padding: 3px 6px;
+  margin: 0 0 3px 0;
+}
+/* line 148, ../../app/stylesheets/partials/_page.scss */
+#main .comments td {
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 151, ../../app/stylesheets/partials/_page.scss */
+#main .comments td p.commenter {
+  font-size: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+/* line 160, ../../app/stylesheets/partials/_page.scss */
+#sidebar {
+  width: 367px;
+  float: left;
+}
+/* line 163, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3.blue {
+  margin: 0 0 15px 0;
+  background: #000033;
+}
+/* line 167, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3.blue:hover {
+  background: #000066;
+}
+/* line 171, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3.green {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #003300;
+}
+/* line 176, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3.green:hover {
+  background: #006600;
+}
+/* line 180, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3.red {
+  background: #660000;
+}
+/* line 183, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3.red:hover {
+  background: #990000;
+}
+/* line 187, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3 {
+  font-size: 2em;
+  text-align: center;
+  background: #311900;
+  text-transform: uppercase;
+  padding: 3px 6px;
+}
+/* line 193, ../../app/stylesheets/partials/_page.scss */
+#sidebar h3 a {
+  text-decoration: none;
+  color: #5f340b;
+}
+/* line 198, ../../app/stylesheets/partials/_page.scss */
+#sidebar embed {
+  margin-left: 3px;
+  background: #000;
+}
+
+/* line 204, ../../app/stylesheets/partials/_page.scss */
+#about {
+  width: 100%;
+  padding: 40px 25px;
+}
+/* line 208, ../../app/stylesheets/partials/_page.scss */
+#about p {
+  width: 700px;
+  margin-left: 20px;
+}
+/* line 213, ../../app/stylesheets/partials/_page.scss */
+#about h2 {
+  background: #311900;
+  color: #630;
+  padding: 3px 3px 3px 20px;
+  text-transform: uppercase;
+  margin: 0 25px 15px 0;
+}
+
+/*/mediaquery*/
+/*/mediaquery*/
+@media print {
+  /* line 10, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 12, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 13, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 14, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 15, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 16, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 17, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 18, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 19, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 21, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 22, ../../../../.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
