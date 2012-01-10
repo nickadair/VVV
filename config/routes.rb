@@ -1,6 +1,8 @@
 Vvv::Application.routes.draw do
 
   get "challenges/accept"
+  get "challenges/edit"
+  get "challenges/new"
   resources :challenges
 
   # The priority is based upon order of creation:

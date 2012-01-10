@@ -7,6 +7,7 @@
 body{
   background: #5f340b;
 }
+
 body, select, input, textarea {
   color: $font-color;
   // Set your base font here, to apply evenly
@@ -51,6 +52,31 @@ small {
   // Use font-size mixin to convert to percentage for YUI
   // http://developer.yahoo.com/yui/3/cssfonts/#fontsize
   @include font-size(11px);  // approx 85% when base-font-size eq 13px
+}
+
+
+.comments{
+  label{
+    width:90%;
+    padding: 0 5%;
+    margin: 2.5% 0 0 0;
+    display: block;
+  }
+  
+  input, textarea{
+    width:90%;
+    margin: 0 5%;
+  }
+  
+  input[type="submit"]{
+    width: auto;
+    margin: 2.5% 0 5% 5%;
+    background: $dark-red;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    border: 1px solid darken($dark-red, 10%);
+  }
+  
 }
 
 // Add the 'required' attribute on your
@@ -113,7 +139,7 @@ header {
     width: 573px;     
     padding-left: 10px;
     margin-left: 20px;
-    height:270px;
+    height: 270px;
     background: url('/images/vs_star.gif') no-repeat 213px bottom;
     .challenger{  
       width: 250px;
@@ -129,14 +155,82 @@ header {
         font-size: 3em;
         padding: 0;
       }
+    }
     .vote{
       background: $dark-red;
       padding: 3px 6px;
       font-size: 1.5em;
       border: 1px solid darken($dark-red, 10%);
     }
-    } 
+  } 
+  
+  .open_challenge{
+    width: 573px;
+    padding-left: 10px;
+    margin-left:20px;
+    .challenger, .open{  
+      width: 250px;
+      float:left;
+      margin-left: 10px;
+    }
+    .open{
+      border: 1px solid $dark-brown-background;
+      height: 150px;
+      width: 248px;
+      background: url(/images/select_challenger.png) top left no-repeat;
+    }  
+  }  
+  
+  .youtube_search{
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    input{
+      color: #ccc;
+      width:60%;
+      margin: 0 0 0 5%;
+      float:left;
+      display:inline;
+    }
+    input.go_button{
+      background: $dark-red;
+      padding: 3px 6px;
+      font-size: 1.3em;
+      border: 1px solid darken($dark-red, 10%);
+    }
+    .search_box{
+      @include search-box-radius;
+      padding:4px 4px 4px 32px;
+      border: 1px solid #ccc;
+      background: #fff url('/images/search_icon.gif') no-repeat 5px top;
+    }
+    input[type="submit"]{
+      width: auto;
+      float:left;
+      display:inline;
+      margin-left: 2%;
+    }
   }
+  
+  .search_results{
+    margin-left: 20px;
+    .add_to_challenge{
+      width: auto;
+      margin: 6px 0;
+      padding: 6px;
+      float: left; 
+      text-align: center;
+    }
+    .add{
+      background: $dark-green;
+      padding: 3px 6px;
+      font-size: 1em;
+      border: 1px solid darken($dark-green, 10%);
+    }
+    
+  }
+  
   .comments{
     width: 550px;
     margin-top: 40px;
@@ -154,7 +248,6 @@ header {
       }
     }
   }             
-  
 } 
 
 #sidebar{
@@ -203,20 +296,26 @@ header {
 
 #about{
   width:100%;
-  padding: 40px 25px;
+  padding: 40px 0;
   
   p{
-    width: 700px;
+    font-size: 1.5em;
     margin-left: 20px;
+    margin-right: 20px;
   }
-  
+    
   h2{
     background: $dark-brown-background;
     color: #630;
     padding: 3px 3px 3px 20px;
     text-transform: uppercase;
-    margin: 0 25px 15px 0
+    margin: 0 0 15px 0;
   }
 }
 
-footer {}
+footer{
+  background: $dark-brown-background;
+  font-size: 1.3em;
+  text-align:center;
+  padding: 20px 0 10px 0;
+}

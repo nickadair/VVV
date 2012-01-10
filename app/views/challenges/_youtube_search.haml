@@ -1,0 +1,4 @@
+.youtube_search 
+  - form_for "#" do |f|
+    = f.text_field :name, :value => "Search YouTube", :class => "search_box"
+    = f.submit "Go!", :disable_with => 'Searching...', :class => "go_button"

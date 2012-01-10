@@ -31,3 +31,8 @@ $brown: #5f340b;
 $dark-blue: #003;
 $dark-green: #030;
 $dark-red: #600;
+@mixin search-box-radius{ 
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+}

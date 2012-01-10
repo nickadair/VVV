@@ -1,2 +1,5 @@
-<h1>Challenges#new</h1>
-<p>Find me in app/views/challenges/new.html.erb</p>
+%h2 Start A Challenge
+= render 'youtube_search'
+.search_results
+  - (1..9).each do |i|
+    = render 'add_to_challenge'

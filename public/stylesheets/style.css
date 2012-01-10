@@ -258,7 +258,7 @@ body {
   background: #5f340b;
 }
 
-/* line 10, ../../app/stylesheets/partials/_page.scss */
+/* line 11, ../../app/stylesheets/partials/_page.scss */
 body, select, input, textarea {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
@@ -266,54 +266,76 @@ body, select, input, textarea {
   line-height: 1.231;
 }
 
-/* line 19, ../../app/stylesheets/partials/_page.scss */
+/* line 20, ../../app/stylesheets/partials/_page.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* line 25, ../../app/stylesheets/partials/_page.scss */
+/* line 26, ../../app/stylesheets/partials/_page.scss */
 h1 {
   font-size: 24px;
 }
 
-/* line 29, ../../app/stylesheets/partials/_page.scss */
+/* line 30, ../../app/stylesheets/partials/_page.scss */
 h2 {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-/* line 34, ../../app/stylesheets/partials/_page.scss */
+/* line 35, ../../app/stylesheets/partials/_page.scss */
 p {
   margin-bottom: 20px;
 }
 
-/* line 38, ../../app/stylesheets/partials/_page.scss */
+/* line 39, ../../app/stylesheets/partials/_page.scss */
 a, a:active, a:visited {
   color: #607890;
 }
 
-/* line 39, ../../app/stylesheets/partials/_page.scss */
+/* line 40, ../../app/stylesheets/partials/_page.scss */
 a:hover {
   color: #003366;
 }
 
-/* line 41, ../../app/stylesheets/partials/_page.scss */
+/* line 42, ../../app/stylesheets/partials/_page.scss */
 strong, th {
   font-weight: bold;
 }
 
-/* line 45, ../../app/stylesheets/partials/_page.scss */
+/* line 46, ../../app/stylesheets/partials/_page.scss */
 th {
   font-size: 1.2em;
   color: #311900;
 }
 
-/* line 50, ../../app/stylesheets/partials/_page.scss */
+/* line 51, ../../app/stylesheets/partials/_page.scss */
 small {
   font-size: 85%;
 }
 
 /* line 59, ../../app/stylesheets/partials/_page.scss */
+.comments label {
+  width: 90%;
+  padding: 0 5%;
+  margin: 2.5% 0 0 0;
+  display: block;
+}
+/* line 66, ../../app/stylesheets/partials/_page.scss */
+.comments input, .comments textarea {
+  width: 90%;
+  margin: 0 5%;
+}
+/* line 71, ../../app/stylesheets/partials/_page.scss */
+.comments input[type="submit"] {
+  width: auto;
+  margin: 2.5% 0 5% 5%;
+  background: #660000;
+  padding: 3px 6px;
+  font-size: 1.5em;
+  border: 1px solid #330000;
+}
+
+/* line 85, ../../app/stylesheets/partials/_page.scss */
 input:invalid, textarea:invalid {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
@@ -327,19 +349,19 @@ input:invalid, textarea:invalid {
   box-shadow: 0 0 5px 0 red;
 }
 
-/* line 64, ../../app/stylesheets/partials/_page.scss */
+/* line 90, ../../app/stylesheets/partials/_page.scss */
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 75, ../../app/stylesheets/partials/_page.scss */
+/* line 101, ../../app/stylesheets/partials/_page.scss */
 #container {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 80, ../../app/stylesheets/partials/_page.scss */
+/* line 106, ../../app/stylesheets/partials/_page.scss */
 header {
   width: 100%;
   overflow: hidden;
@@ -349,25 +371,25 @@ header {
   margin: 0;
   padding: 0;
 }
-/* line 88, ../../app/stylesheets/partials/_page.scss */
+/* line 114, ../../app/stylesheets/partials/_page.scss */
 header #logo {
   width: 593px;
   float: left;
   text-indent: -999em;
 }
-/* line 93, ../../app/stylesheets/partials/_page.scss */
+/* line 119, ../../app/stylesheets/partials/_page.scss */
 header #start_challenge {
   width: 367px;
   float: left;
   text-align: right;
 }
 
-/* line 100, ../../app/stylesheets/partials/_page.scss */
+/* line 126, ../../app/stylesheets/partials/_page.scss */
 #main {
   width: 593px;
   float: left;
 }
-/* line 103, ../../app/stylesheets/partials/_page.scss */
+/* line 129, ../../app/stylesheets/partials/_page.scss */
 #main h2 {
   background: #311900 url("/images/red_star.gif") top center no-repeat;
   color: #630;
@@ -376,7 +398,7 @@ header #start_challenge {
   text-align: center;
   margin: 0 25px 15px 20px;
 }
-/* line 112, ../../app/stylesheets/partials/_page.scss */
+/* line 138, ../../app/stylesheets/partials/_page.scss */
 #main .challenge {
   width: 573px;
   padding-left: 10px;
@@ -384,87 +406,163 @@ header #start_challenge {
   height: 270px;
   background: url("/images/vs_star.gif") no-repeat 213px bottom;
 }
-/* line 118, ../../app/stylesheets/partials/_page.scss */
+/* line 144, ../../app/stylesheets/partials/_page.scss */
 #main .challenge .challenger {
   width: 250px;
   float: left;
   margin-left: 10px;
 }
-/* line 122, ../../app/stylesheets/partials/_page.scss */
+/* line 148, ../../app/stylesheets/partials/_page.scss */
 #main .challenge .challenger th {
   padding: 5px 0;
 }
-/* line 125, ../../app/stylesheets/partials/_page.scss */
+/* line 151, ../../app/stylesheets/partials/_page.scss */
 #main .challenge .challenger td {
   text-align: center;
 }
-/* line 128, ../../app/stylesheets/partials/_page.scss */
+/* line 154, ../../app/stylesheets/partials/_page.scss */
 #main .challenge .challenger td.vote_count {
   font-size: 3em;
   padding: 0;
 }
-/* line 132, ../../app/stylesheets/partials/_page.scss */
-#main .challenge .challenger .vote {
+/* line 159, ../../app/stylesheets/partials/_page.scss */
+#main .challenge .vote {
   background: #660000;
   padding: 3px 6px;
   font-size: 1.5em;
   border: 1px solid #330000;
 }
-/* line 140, ../../app/stylesheets/partials/_page.scss */
+/* line 167, ../../app/stylesheets/partials/_page.scss */
+#main .open_challenge {
+  width: 573px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+/* line 171, ../../app/stylesheets/partials/_page.scss */
+#main .open_challenge .challenger, #main .open_challenge .open {
+  width: 250px;
+  float: left;
+  margin-left: 10px;
+}
+/* line 176, ../../app/stylesheets/partials/_page.scss */
+#main .open_challenge .open {
+  border: 1px solid #311900;
+  height: 150px;
+  width: 248px;
+  background: url(/images/select_challenger.png) top left no-repeat;
+}
+/* line 184, ../../app/stylesheets/partials/_page.scss */
+#main .youtube_search {
+  width: 550px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+/* line 189, ../../app/stylesheets/partials/_page.scss */
+#main .youtube_search input {
+  color: #ccc;
+  width: 60%;
+  margin: 0 0 0 5%;
+  float: left;
+  display: inline;
+}
+/* line 196, ../../app/stylesheets/partials/_page.scss */
+#main .youtube_search input.go_button {
+  background: #660000;
+  padding: 3px 6px;
+  font-size: 1.3em;
+  border: 1px solid #330000;
+}
+/* line 202, ../../app/stylesheets/partials/_page.scss */
+#main .youtube_search .search_box {
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  padding: 4px 4px 4px 32px;
+  border: 1px solid #ccc;
+  background: white url("/images/search_icon.gif") no-repeat 5px top;
+}
+/* line 208, ../../app/stylesheets/partials/_page.scss */
+#main .youtube_search input[type="submit"] {
+  width: auto;
+  float: left;
+  display: inline;
+  margin-left: 2%;
+}
+/* line 216, ../../app/stylesheets/partials/_page.scss */
+#main .search_results {
+  margin-left: 20px;
+}
+/* line 218, ../../app/stylesheets/partials/_page.scss */
+#main .search_results .add_to_challenge {
+  width: auto;
+  margin: 6px 0;
+  padding: 6px;
+  float: left;
+  text-align: center;
+}
+/* line 225, ../../app/stylesheets/partials/_page.scss */
+#main .search_results .add {
+  background: #003300;
+  padding: 3px 6px;
+  font-size: 1em;
+  border: 1px solid black;
+}
+/* line 234, ../../app/stylesheets/partials/_page.scss */
 #main .comments {
   width: 550px;
   margin-top: 40px;
   margin-left: 20px;
 }
-/* line 144, ../../app/stylesheets/partials/_page.scss */
+/* line 238, ../../app/stylesheets/partials/_page.scss */
 #main .comments h2 {
   padding: 3px 6px;
   margin: 0 0 3px 0;
 }
-/* line 148, ../../app/stylesheets/partials/_page.scss */
+/* line 242, ../../app/stylesheets/partials/_page.scss */
 #main .comments td {
   padding: 6px;
   border-bottom: 1px solid #ccc;
 }
-/* line 151, ../../app/stylesheets/partials/_page.scss */
+/* line 245, ../../app/stylesheets/partials/_page.scss */
 #main .comments td p.commenter {
   font-size: 0.8em;
   margin-bottom: 0.8em;
 }
 
-/* line 160, ../../app/stylesheets/partials/_page.scss */
+/* line 253, ../../app/stylesheets/partials/_page.scss */
 #sidebar {
   width: 367px;
   float: left;
 }
-/* line 163, ../../app/stylesheets/partials/_page.scss */
+/* line 256, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3.blue {
   margin: 0 0 15px 0;
   background: #000033;
 }
-/* line 167, ../../app/stylesheets/partials/_page.scss */
+/* line 260, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3.blue:hover {
   background: #000066;
 }
-/* line 171, ../../app/stylesheets/partials/_page.scss */
+/* line 264, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3.green {
   margin-bottom: 10px;
   margin-top: 10px;
   background: #003300;
 }
-/* line 176, ../../app/stylesheets/partials/_page.scss */
+/* line 269, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3.green:hover {
   background: #006600;
 }
-/* line 180, ../../app/stylesheets/partials/_page.scss */
+/* line 273, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3.red {
   background: #660000;
 }
-/* line 183, ../../app/stylesheets/partials/_page.scss */
+/* line 276, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3.red:hover {
   background: #990000;
 }
-/* line 187, ../../app/stylesheets/partials/_page.scss */
+/* line 280, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3 {
   font-size: 2em;
   text-align: center;
@@ -472,34 +570,43 @@ header #start_challenge {
   text-transform: uppercase;
   padding: 3px 6px;
 }
-/* line 193, ../../app/stylesheets/partials/_page.scss */
+/* line 286, ../../app/stylesheets/partials/_page.scss */
 #sidebar h3 a {
   text-decoration: none;
   color: #5f340b;
 }
-/* line 198, ../../app/stylesheets/partials/_page.scss */
+/* line 291, ../../app/stylesheets/partials/_page.scss */
 #sidebar embed {
   margin-left: 3px;
   background: #000;
 }
 
-/* line 204, ../../app/stylesheets/partials/_page.scss */
+/* line 297, ../../app/stylesheets/partials/_page.scss */
 #about {
   width: 100%;
-  padding: 40px 25px;
+  padding: 40px 0;
 }
-/* line 208, ../../app/stylesheets/partials/_page.scss */
+/* line 301, ../../app/stylesheets/partials/_page.scss */
 #about p {
-  width: 700px;
+  font-size: 1.5em;
   margin-left: 20px;
+  margin-right: 20px;
 }
-/* line 213, ../../app/stylesheets/partials/_page.scss */
+/* line 307, ../../app/stylesheets/partials/_page.scss */
 #about h2 {
   background: #311900;
   color: #630;
   padding: 3px 3px 3px 20px;
   text-transform: uppercase;
-  margin: 0 25px 15px 0;
+  margin: 0 0 15px 0;
+}
+
+/* line 316, ../../app/stylesheets/partials/_page.scss */
+footer {
+  background: #311900;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px 0 10px 0;
 }
 
 /*/mediaquery*/

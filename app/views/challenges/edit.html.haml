@@ -1,2 +1,12 @@
-<h1>Challenges#edit</h1>
-<p>Find me in app/views/challenges/edit.html.erb</p>
+%h2 Open Challenge
+.open_challenge
+  .challenger
+    %embed#challenger_1{:src => "http://www.youtube.com/v/JpBGRA6HHtY", :width => "250"}
+  .challenger
+    .open
+
+.clearfix
+= render 'youtube_search'
+.search_results
+  - (1..9).each do |i|
+    = render 'add_to_challenge'
